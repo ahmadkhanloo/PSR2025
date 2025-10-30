@@ -19,20 +19,37 @@
   font-style: normal;
 }
 
-/* Apply Persian font globally for RTL pages */
+/* ==============================
+   ✅ Apply Persian font globally on RTL / Persian pages
+   ============================== */
 [dir="rtl"], [lang="fa"] {
   font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif !important;
   line-height: 2;
 }
 
+/* Ensure all text elements get Vazirmatn */
+[dir="rtl"] p,
+[dir="rtl"] li,
+[dir="rtl"] span,
+[dir="rtl"] div,
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6,
+[dir="rtl"] .register-btn,
+[dir="rtl"] .lang-btn {
+  font-family: 'Vazirmatn', sans-serif !important;
+}
+
 /* ==============================
-   ✅ Headings
+   ✅ Headings alignment
    ============================== */
 [dir="rtl"] h1,
 [dir="rtl"] h2,
 [dir="rtl"] h3 {
   text-align: right !important;
-  font-family: 'Vazirmatn', sans-serif !important;
 }
 
 /* Center headers in page header */
@@ -83,6 +100,9 @@
   transition: all 0.3s ease;
 }
 
+/* ==============================
+   ✅ Hover effect
+   ============================== */
 .lang-btn:hover {
   background: rgba(255, 255, 255, 0.3);
   transform: translateY(-2px);
@@ -104,11 +124,6 @@
   text-align: left;
 }
 
-/* Apply Persian font inside code box for comments / Persian text */
-[dir="rtl"] .code-example {
-  font-family: 'Vazirmatn', sans-serif !important;
-}
-
 .code-line {
   margin: 0.3rem 0;
 }
@@ -122,16 +137,9 @@
   margin: 1.5rem 0;
 }
 
-/* RTL adjustment for info-box */
 [dir="rtl"] .info-box {
   border-left: none;
   border-right: 4px solid #159957;
-  font-family: 'Vazirmatn', sans-serif !important;
-}
-
-.info-item {
-  margin: 0.75rem 0;
-  font-size: 1.05rem;
 }
 
 /* Register Button */
@@ -147,11 +155,6 @@
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(21, 153, 87, 0.3);
   margin: 1rem 0;
-}
-
-/* Apply Persian font inside register button */
-[dir="rtl"] .register-btn {
-  font-family: 'Vazirmatn', sans-serif !important;
 }
 
 .register-btn:hover {
