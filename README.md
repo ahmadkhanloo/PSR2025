@@ -1,3 +1,10 @@
+title: Collaborative Scientific Programming for Cognitive Scientists
+---
+
+[🇮🇷 فارسی](./fa.md)
+
+# 🧠 Collaborative Scientific Programming for Cognitive Scientists
+
 In cognitive science research, scripts often work only on the researcher’s laptop—hard to maintain, reproduce, or share.
 This workshop is designed to change that.
 
