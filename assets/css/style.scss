@@ -85,8 +85,12 @@
 }
 
 [dir="rtl"] .lang-switcher {
-  right: auto;
-  left: 1rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  font-family: 'Vazirmatn', sans-serif !important;
+}
 }
 
 .lang-btn {
