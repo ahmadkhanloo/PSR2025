@@ -1,6 +1,3 @@
----
----
-
 @import "{{ site.theme }}";
 
 /* ✅ Persian Font */
@@ -43,52 +40,70 @@
   padding-left: 0;
 }
 
-/* اطمینان از اینکه هدینگ‌های فارسی راست‌چین شوند */[dir="rtl"] h1, 
-[dir="rtl"] h2, 
-[dir="rtl"] h3 {
-  text-align: right !important;
-}
-
-[dir="rtl"] h1, 
-[dir="rtl"] h2, 
-[dir="rtl"] h3, 
-[dir="rtl"] p, 
-[dir="rtl"] li {
-  font-family: 'Vazirmatn', sans-serif !important;
-}
-
-
-/* ✅ Language switcher */
-.lang-switcher {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  z-index: 10;
-}
-
-[dir="rtl"] .lang-switcher {
-  right: auto;
-  left: 1rem;
-}
-
-.lang-btn {
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  padding: 0.5rem 1.5rem;
-  border-radius: 1.5rem;
-  text-decoration: none;
-  font-weight: 600;
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  transition: all 0.3s ease;
-}
-
-.lang-btn:hover {
-  background: rgba(255, 255, 255, 0.3);
-  transform: translateY(-2px);
-}
-
 /* ✅ Persian line height */
 [dir="rtl"] p,
 [dir="rtl"] li {
   line-height: 2;
+}
+
+/* Code Examples Styling */
+.code-example {
+  background: #2d2d2d;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  font-family: 'Courier New', monospace;
+  direction: ltr;
+  text-align: left;
+}
+
+.code-line {
+  margin: 0.3rem 0;
+}
+
+/* Info Box */
+.info-box {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border-left: 4px solid #159957;
+  margin: 1.5rem 0;
+}
+
+[dir="rtl"] .info-box {
+  border-left: none;
+  border-right: 4px solid #159957;
+}
+
+.info-item {
+  margin: 0.75rem 0;
+  font-size: 1.05rem;
+}
+
+/* Register Button */
+.register-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #159957 0%, #155799 100%);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(21, 153, 87, 0.3);
+  margin: 1rem 0;
+}
+
+.register-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(21, 153, 87, 0.5);
+  text-decoration: none;
+}
+
+/* Center align for buttons */
+.btn-center {
+  text-align: center;
+  margin: 2rem 0;
 }
