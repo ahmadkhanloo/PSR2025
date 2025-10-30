@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Programming for Research | برنامه‌نویسی برای تحقیق</title>
+    <meta name="description" content="A hands-on Git and Python workshop for cognitive researchers | کارگاه عملی Git و Python برای محققان شناختی">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        body { font-family: 'Vazirmatn', sans-serif; background: var(--bg); color: white; padding: 2rem 1rem; min-height: 100vh; }
+        .container { max-width: 800px; }
+        .lang-btn { position: fixed; top: 20px; right: 20px; z-index: 1000; }
+        .fa-content { direction: rtl; text-align: right; }
+        .hidden { display: none !important; }
+        h1 { font-size: 3rem; margin-bottom: 2rem; }
+        .btn-register { font-size: 1.5rem; padding: 1rem 3rem; border-radius: 50px; }
+        @media (max-width: 768px) { h1 { font-size: 2rem; } }
+    </style>
+</head>
+<body>
+    <button class="btn btn-outline-light lang-btn btn-lg" id="langToggle">🇺🇸 English</button>
+
+    <div class="container text-center">
+        <!-- Title -->
+        <h1 id="title" class="display-3 mb-5">Programming for Research</h1>
+        <h1 id="titleFa" class="display-3 mb-5 hidden">برنامه‌نویسی برای تحقیق</h1>
+
+        <!-- Why Join -->
+        <section id="whyEn" class="mb-5">
+            <h2>🧩 Why Join?</h2>
+            <p>If your files look like this: <code>task_final.py</code> <code>task_final2.py</code> <code>task_final_really_final.py</code> – then this workshop is for you!</p>
+            <p>A <strong>3-day hands-on</strong> workshop on Git + Python for cognitive researchers.</p>
+            <ul class="list-unstyled">
+                <li>✅ Use Git & GitHub for collaboration</li>
+                <li>✅ Write clean, modular Python code</li>
+                <li>✅ Manage projects efficiently</li>
+                <li>✅ Testing & documentation habits</li>
+                <li>✅ Turn research code into pro assets</li>
+            </ul>
+        </section>
+        <section id="whyFa" class="mb-5 hidden fa-content">
+            <h2>🧩 چرا شرکت کنید؟</h2>
+            <p>اگر فایل‌هاتون اینطوریه: <code>task_final.py</code> <code>task_final2.py</code> <code>task_final_really_final.py</code> – این کارگاه **برای شماست**!</p>
+            <p>کارگاه **۳ روزه عملی** Git + Python برای **محققان شناختی**.</p>
+            <ul class="list-unstyled">
+                <li>✅ Git و GitHub برای همکاری</li>
+                <li>✅ کد Python تمیز و ماژولار</li>
+                <li>✅ مدیریت پروژه کارآمد</li>
+                <li>✅ تست و مستندسازی</li>
+                <li>✅ تبدیل کد تحقیق به دارایی حرفه‌ای</li>
+            </ul>
+        </section>
+
+        <!-- Who -->
+        <section id="whoEn" class="mb-5">
+            <h2>🧑‍🔬 Who Is It For?</h2>
+            <ul>
+                <li>Students & cognitive researchers using Python</li>
+                <li>Want cleaner, shareable, reproducible projects</li>
+                <li>Minimal experience → level up workflow!</li>
+            </ul>
+        </section>
+        <section id="whoFa" class="mb-5 hidden fa-content">
+            <h2>🧑‍🔬 برای کیه؟</h2>
+            <ul>
+                <li>دانشجویان و محققان شناختی با Python</li>
+                <li>می‌خواید پروژه‌هاتون تمیز، قابل اشتراک و تکرارپذیر بشه</li>
+                <li>تجربه کم؟ → workflow رو **لول آپ** کنید!</li>
+            </ul>
+        </section>
+
+        <!-- Info -->
+        <section id="infoEn" class="mb-5">
+            <h2>📍 Workshop Info</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <p><strong>📅 Nov 11–13, 2025</strong> (۲۰-۲۲ آبان ۱۴۰۴)</p>
+                    <p><strong>🏛 IPM, Tehran</strong></p>
+                    <p><strong>👥 14 seats only!</strong></p>
+                </div>
+            </div>
+        </section>
+        <section id="infoFa" class="mb-5 hidden fa-content">
+            <h2>📍 اطلاعات کارگاه</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <p><strong>📅 ۲۰-۲۲ آبان ۱۴۰۴</strong> (Nov 11–13, 2025)</p>
+                    <p><strong>🏛 موسسه پژوهشی علوم اساسی (IPM)، تهران</strong></p>
+                    <p><strong>👥 فقط ۱۴ نفر!</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Register -->
+        <a href="https://digiform.ir/w3037f10f" class="btn btn-success btn-register btn-lg mb-5">
+            <span id="regEn">Register Now! 👉</span>
+            <span id="regFa" class="hidden">ثبت‌نام 👈</span>
+        </a>
+
+        <footer class="mt-5">
+            <p>© ۲۰۲۵ Programming for Research @ IPM | <a href="#contact" class="text-light">تماس</a></p>
+        </footer>
+    </div>
+
+    <script>
+        const toggle = document.getElementById('langToggle');
+        let isFa = false;
+        toggle.onclick = () => {
+            isFa = !isFa;
+            document.querySelectorAll('[id$="En"], [id$="en"]').forEach(el => el.classList.toggle('hidden', isFa));
+            document.querySelectorAll('[id$="Fa"], [id$="fa"]').forEach(el => el.classList.toggle('hidden', !isFa));
+            toggle.textContent = isFa ? '🇺🇸 English' : '🇮🇷 فارسی';
+            document.documentElement.dir = isFa ? 'rtl' : 'ltr';
+            document.body.classList.toggle('fa-content', isFa);
+        };
+    </script>
+</body>
+</html>
