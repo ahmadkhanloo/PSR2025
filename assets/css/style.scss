@@ -2,7 +2,9 @@
 ---
 @import "{{ site.theme }}";
 
-/* ✅ Persian Font */
+/* ==============================
+   ✅ Persian Font Setup
+   ============================== */
 @font-face {
   font-family: 'Vazirmatn';
   src: url('{{ "/assets/Vazirmatn-Regular.woff2" | relative_url }}') format('woff2');
@@ -17,12 +19,23 @@
   font-style: normal;
 }
 
-/* ✅ Persian font applied for RTL */
+/* Apply Persian font globally for RTL pages */
 [dir="rtl"], [lang="fa"] {
   font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif !important;
+  line-height: 2;
 }
 
-/* ✅ Center headers */
+/* ==============================
+   ✅ Headings
+   ============================== */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3 {
+  text-align: right !important;
+  font-family: 'Vazirmatn', sans-serif !important;
+}
+
+/* Center headers in page header */
 .page-header h1,
 .page-header h2,
 .project-tagline {
@@ -31,7 +44,9 @@
   display: block;
 }
 
-/* ✅ RTL layout */
+/* ==============================
+   ✅ RTL layout
+   ============================== */
 [dir="rtl"] .main-content {
   text-align: right;
 }
@@ -42,22 +57,9 @@
   padding-left: 0;
 }
 
-/* اطمینان از اینکه هدینگ‌های فارسی راست‌چین شوند */[dir="rtl"] h1, 
-[dir="rtl"] h2, 
-[dir="rtl"] h3 {
-  text-align: right !important;
-}
-
-[dir="rtl"] h1, 
-[dir="rtl"] h2, 
-[dir="rtl"] h3, 
-[dir="rtl"] p, 
-[dir="rtl"] li {
-  font-family: 'Vazirmatn', sans-serif !important;
-}
-
-
-/* ✅ Language switcher */
+/* ==============================
+   ✅ Language switcher
+   ============================== */
 .lang-switcher {
   position: absolute;
   top: 1rem;
@@ -86,61 +88,9 @@
   transform: translateY(-2px);
 }
 
-/* ✅ Persian line height */
-[dir="rtl"] p,
-[dir="rtl"] li {
-  line-height: 2;
-}
-
-@import "{{ site.theme }}";
-
-/* ✅ Persian Font */
-@font-face {
-  font-family: 'Vazirmatn';
-  src: url('{{ "/assets/Vazirmatn-Regular.woff2" | relative_url }}') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Vazirmatn';
-  src: url('{{ "/assets/Vazirmatn-Bold.woff2" | relative_url }}') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-}
-
-/* ✅ Persian font applied for RTL */
-[dir="rtl"], [lang="fa"] {
-  font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif !important;
-}
-
-/* ✅ Center headers */
-.page-header h1,
-.page-header h2,
-.project-tagline {
-  text-align: center !important;
-  margin: 0 auto;
-  display: block;
-}
-
-/* ✅ RTL layout */
-[dir="rtl"] .main-content {
-  text-align: right;
-}
-
-[dir="rtl"] .main-content ul,
-[dir="rtl"] .main-content ol {
-  padding-right: 2rem;
-  padding-left: 0;
-}
-
-/* ✅ Persian line height */
-[dir="rtl"] p,
-[dir="rtl"] li {
-  line-height: 2;
-}
-
-/* ========== اینها را بدون تغییر نگه دار ========= */
+/* ==============================
+   ✅ Preserve existing styles
+   ============================== */
 
 /* Code Examples Styling */
 .code-example {
@@ -152,6 +102,11 @@
   font-family: 'Courier New', monospace;
   direction: ltr;
   text-align: left;
+}
+
+/* Apply Persian font inside code box for comments / Persian text */
+[dir="rtl"] .code-example {
+  font-family: 'Vazirmatn', sans-serif !important;
 }
 
 .code-line {
@@ -167,9 +122,11 @@
   margin: 1.5rem 0;
 }
 
+/* RTL adjustment for info-box */
 [dir="rtl"] .info-box {
   border-left: none;
   border-right: 4px solid #159957;
+  font-family: 'Vazirmatn', sans-serif !important;
 }
 
 .info-item {
@@ -192,6 +149,11 @@
   margin: 1rem 0;
 }
 
+/* Apply Persian font inside register button */
+[dir="rtl"] .register-btn {
+  font-family: 'Vazirmatn', sans-serif !important;
+}
+
 .register-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(21, 153, 87, 0.5);
@@ -203,4 +165,3 @@
   text-align: center;
   margin: 2rem 0;
 }
-
