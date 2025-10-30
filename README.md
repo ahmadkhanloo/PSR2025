@@ -1,37 +1,48 @@
-title: Collaborative Scientific Programming for Cognitive Scientists
+ Git Workshop for Researchers [🇮🇷 فارسی](./fa.md)
+---
+If your files look like this:
+
+`task_final.py`<br>
+`task_final2.py`<br>
+`task_final_really_final.py`
+
+then this workshop is definitely for you.
+
 ---
 
-[🇮🇷 فارسی](./fa.md)
+### 🧩 Why Join?
 
-# 🧠 Collaborative Scientific Programming for Cognitive Scientists
+In research, messy scripts are common — especially without structure, documentation, or version control.  
+This **3-day hands-on workshop** helps you learn how to work like a software team with minimal complexity.
 
-In cognitive science research, scripts often work only on the researcher’s laptop—hard to maintain, reproduce, or share.
-This workshop is designed to change that.
+You’ll learn how to:
+- Use **Git & GitHub** for collaboration  
+- Write **clean, modular, and reusable code**  
+- Manage your projects efficiently  
+- Build simple testing and documentation habits  
+- Turn your research code into a professional, sustainable asset  
 
-Over three hands-on days, you’ll learn—with minimal technical complexity—how to:
+---
 
-Manage your research code with Git and GitHub
+### 🧑‍🔬 Who Is It For?
 
-Organize projects like a software team
+Students and researchers who:
+- Use Python for analysis, modeling, or experiments  
+- Want to make their projects cleaner, shareable, and reproducible  
+- Have minimal coding experience but want to level up their research workflow  
 
-Write clean, documented, and testable code
+---
 
-Collaborate effectively on shared cognitive science projects
+### 📍 Workshop Info
 
-🎯 The goal isn’t to turn scientists into software engineers,
-but to help them write clear, reusable, and trustworthy research code.
+📅 *Nov 11–13, 2025*  
+🏛 *Institute for Research in Fundamental Sciences (IPM), Tehran*  
+👥 *Limited seats (14 participants)*  
 
-👥 Who should attend:
-Students and researchers in cognitive science, psychology, neuroscience, or related fields who work with data, modeling, or behavioral tasks.
+👉 [Register here](https://digiform.ir/w3037f10f)
 
-🧩 You’ll gain practical skills in:
+---
 
-Version control and team collaboration
-
-Modular design and documentation
-
-Reproducible environments (Conda, venv)
-
-Visualization and CI/CD basics
-
-Group development of a real cognitive task project
+<div align="center">
+© 2025 Git Workshop @ IPM
+</div>
