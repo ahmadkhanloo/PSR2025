@@ -1,6 +1,12 @@
-title: "Programming for Research"
+title: "Programming for Researchers"
 description: "A hands-on Git and Python workshop for cognitive researchers"
 theme: jekyll-theme-cayman
 show_downloads: false
 markdown: kramdown
 lang: en
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
