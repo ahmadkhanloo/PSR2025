@@ -1,16 +1,3 @@
- Git Workshop for Researchers
-
----
-If your files look like this:
-
-`task_final.py`<br>
-`task_final2.py`<br>
-`task_final_really_final.py`
-
-then this workshop is definitely for you.
-
----
-
 ### 🧩 Why Join?
 
 In research, messy scripts are common — especially without structure, documentation, or version control.  
