@@ -85,6 +85,10 @@
   margin-right: 0;
 }
 
+[dir="rtl"] .page-header h2 {
+  text-align: right;
+}
+
 /* Code Examples Styling */
 .code-example {
   background: #2d2d2d;
