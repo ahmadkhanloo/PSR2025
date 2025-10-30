@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: 'en' }}" {% if page.lang == 'fa' %}dir="rtl"{% endif %}>
+<html lang="{{ page.lang | default: 'en' }}" {% if page.lang == 'fa' %}dir="rtl" lang="fa"{% endif %}>
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +8,6 @@
     <title>{{ site.title | default: site.github.repository_name }}</title>
   </head>
   <body>
-    <a id="skip-to-content" href="#content">Skip to the content.</a>
-
     <header class="page-header" role="banner">
       <div class="lang-switcher">
         {% if page.lang == 'fa' %}
@@ -24,7 +22,6 @@
 
     <main id="content" class="main-content" role="main">
       {{ content }}
-
       <footer class="site-footer">
         <span class="site-footer-credits">© 2025 Git Workshop @ IPM</span>
       </footer>
