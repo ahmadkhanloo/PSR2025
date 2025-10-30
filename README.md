@@ -4,7 +4,7 @@ title: Git Workshop for Researchers
 ---
 
 <div align="right">
-<a href="fa/">🇮🇷 فارسی</a>
+<a href="fa.md">🇮🇷 فارسی</a>
 </div>
 ---
 If your files look like this:
