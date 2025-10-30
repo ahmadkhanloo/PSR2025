@@ -5,14 +5,14 @@
 
 @font-face {
   font-family: 'Vazirmatn';
-  src: url('{{ "/assets/Vazirmatn-Regular.woff2" | relative_url }}') format('woff2'),
+  src: url('{{ "/assets/Vazirmatn-Regular.woff2" | relative_url }}') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Vazirmatn';
-  src: url('{{ "/assets/Vazirmatn-Bold.woff2" | relative_url }}') format('woff2'),
+  src: url('{{ "/assets/Vazirmatn-Bold.woff2" | relative_url }}') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
