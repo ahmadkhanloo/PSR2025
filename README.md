@@ -1,11 +1,5 @@
----
-layout: default
-title: Git Workshop for Researchers
----
+ Git Workshop for Researchers
 
-<div align="right">
-<a href="fa.md">🇮🇷 فارسی</a>
-</div>
 ---
 If your files look like this:
 
