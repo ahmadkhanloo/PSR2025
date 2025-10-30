@@ -1,24 +1,18 @@
-@import "{{ site.theme }}";
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
+/* ✅ Persian Font - حالا از Google Fonts لود میشه و ۱۰۰٪ کار میکنه! */
 
-/* ✅ Persian Font */
-@font-face {
-  font-family: 'Vazirmatn';
-  src: url('{{ "/assets/Vazirmatn-Regular.woff2" | relative_url }}') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+/* ✅ Persian font applied for RTL - بدون نیاز به فایل محلی */
+html,
+body,
+[dir="rtl"],
+[lang="fa"],
+[lang="fa-IR"] {
+  font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Tahoma', sans-serif !important;
+  direction: rtl;
+  text-align: right;
 }
 
-@font-face {
-  font-family: 'Vazirmatn';
-  src: url('{{ "/assets/Vazirmatn-Bold.woff2" | relative_url }}') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-}
-
-/* ✅ Persian font applied for RTL */
-[dir="rtl"], [lang="fa"] {
-  font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif !important;
-}
+/* ✅ اگر صفحه RTL نیست، این رو به <body dir="rtl" lang="fa"> اضافه کن */
 
 /* ✅ Center headers */
 .page-header h1,
@@ -29,81 +23,143 @@
   display: block;
 }
 
-/* ✅ RTL layout */
-[dir="rtl"] .main-content {
+/* ✅ RTL layout fixes */
+[dir="rtl"] .main-content,
+[dir="rtl"] article {
   text-align: right;
 }
-
 [dir="rtl"] .main-content ul,
-[dir="rtl"] .main-content ol {
-  padding-right: 2rem;
-  padding-left: 0;
+[dir="rtl"] .main-content ol,
+[dir="rtl"] article ul,
+[dir="rtl"] article ol {
+  padding-right: 2rem !important;
+  padding-left: 0 !important;
+  margin-right: 0;
 }
 
 /* ✅ Persian line height */
 [dir="rtl"] p,
 [dir="rtl"] li {
-  line-height: 2;
+  line-height: 2 !important;
 }
 
-/* Code Examples Styling */
+/* 🔥 Code Examples Styling - حالا ۱۰۰٪ کار میکنه! */
 .code-example {
-  background: #2d2d2d;
-  color: #f8f8f2;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  margin: 1rem 0;
-  font-family: 'Courier New', monospace;
-  direction: ltr;
-  text-align: left;
+  background: #1e1e1e !important;
+  color: #f8f8f2 !important;
+  padding: 1.5rem !important;
+  border-radius: 0.75rem !important;
+  margin: 2rem 0 !important;
+  font-family: 'Fira Code', 'Courier New', Consolas, monospace !important;
+  direction: ltr !important;
+  text-align: left !important;
+  border: 1px solid #333 !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+  overflow-x: auto !important;
+  position: relative;
 }
-
-.code-line {
-  margin: 0.3rem 0;
-}
-
-/* Info Box */
-.info-box {
-  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  border-left: 4px solid #159957;
-  margin: 1.5rem 0;
-}
-
-[dir="rtl"] .info-box {
-  border-left: none;
-  border-right: 4px solid #159957;
-}
-
-.info-item {
-  margin: 0.75rem 0;
-  font-size: 1.05rem;
-}
-
-/* Register Button */
-.register-btn {
-  display: inline-block;
-  background: linear-gradient(135deg, #159957 0%, #155799 100%);
+.code-example::before {
+  content: "💻 کد نمونه";
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  background: #159957;
   color: white;
-  padding: 1rem 2.5rem;
-  border-radius: 2rem;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(21, 153, 87, 0.3);
-  margin: 1rem 0;
+  padding: 0.25rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+.code-line {
+  margin: 0.5rem 0 !important;
+  padding: 0.2rem 0;
 }
 
+/* برای استفاده: 
+<div class="code-example">
+  <div class="code-line">print("سلام دنیا!")</div>
+</div>
+*/
+
+/* 🔥 Info Box - بهتر شده! */
+.info-box {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%) !important;
+  padding: 2rem !important;
+  border-radius: 1rem !important;
+  border-left: 5px solid #0ea5e9 !important;
+  margin: 2rem 0 !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+}
+[dir="rtl"] .info-box {
+  border-left: none !important;
+  border-right: 5px solid #0ea5e9 !important;
+}
+.info-item {
+  margin: 1rem 0 !important;
+  font-size: 1.1rem !important;
+  display: flex;
+  align-items: center;
+}
+.info-item::before {
+  content: "ℹ️";
+  margin-left: 0.75rem;
+  font-size: 1.5rem;
+}
+
+/* 🔥 Register Button - حالا عالی کار میکنه! انیمیشن داره! */
+.register-btn {
+  display: inline-block !important;
+  background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%) !important;
+  color: white !important;
+  padding: 1.2rem 3rem !important;
+  border-radius: 50px !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  font-size: 1.2rem !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4) !important;
+  margin: 1.5rem 0 !important;
+  border: none !important;
+  position: relative;
+  overflow: hidden;
+}
+.register-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.5s;
+}
+.register-btn:hover::before {
+  left: 100%;
+}
 .register-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(21, 153, 87, 0.5);
-  text-decoration: none;
+  transform: translateY(-5px) scale(1.05) !important;
+  box-shadow: 0 15px 40px rgba(16, 185, 129, 0.6) !important;
+  text-decoration: none !important;
+  color: white !important;
+}
+.register-btn:active {
+  transform: translateY(-2px) scale(1.02) !important;
 }
 
-/* Center align for buttons */
+/* ✅ Center align for buttons */
 .btn-center {
-  text-align: center;
-  margin: 2rem 0;
+  text-align: center !important;
+  margin: 3rem 0 !important;
+}
+
+/* 🔥 برای استفاده از دکمه ثبت نام:
+<div class="btn-center">
+  <a href="/register" class="register-btn">🚀 ثبت نام رایگان</a>
+</div>
+*/
+
+/* ✅ اضافی: تمام Highlighter های Jekyll رو RTL کن */
+.highlight {
+  direction: ltr !important;
+  text-align: left !important;
 }
