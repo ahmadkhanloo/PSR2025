@@ -1,3 +1,6 @@
+## Programming for Researchers [🇮🇷 نسخه فارسی](fa.md)
+---
+
 ### 🧩 Why Join?
 
 In research, messy scripts are common — especially without structure, documentation, or version control.  
