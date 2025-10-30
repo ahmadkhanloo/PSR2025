@@ -3,6 +3,25 @@
 
 @import "{{ site.theme }}";
 
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('{{ "/assets/Vazirmatn-Regular.woff2" | relative_url }}') format('woff2'),
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('{{ "/assets/Vazirmatn-Bold.woff2" | relative_url }}') format('woff2'),
+  font-weight: bold;
+  font-style: normal;
+}
+
+[dir="rtl"] {
+  font-family: 'Vazirmatn', sans-serif !important;
+}
+
+
 /* Language Switcher */
 .lang-switcher {
   position: absolute;
@@ -156,9 +175,4 @@ h2 {
     right: auto;
     left: 0.5rem;
   }
-}
-
-/* Force Vazirmatn after theme styles */
-[dir="rtl"], [lang="fa"] {
-  font-family: 'Vazirmatn', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
